@@ -1,6 +1,5 @@
 import { cookies } from "next/headers";
 import { redirect, RedirectType } from "next/navigation";
-import RoleChecker from "./role.checker";
 
 export default function PrivateLayout({
   children,
@@ -14,8 +13,8 @@ export default function PrivateLayout({
   }
 
   return (
-    <RoleChecker>
+    <>
       <main>{children}</main>
-    </RoleChecker>
+    </>
   );
 }
