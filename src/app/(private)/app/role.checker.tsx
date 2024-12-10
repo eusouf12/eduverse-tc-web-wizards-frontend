@@ -18,7 +18,7 @@ const RoleChecker = ({
     if (!user) return;
 
     const roleRoutes = {
-      admin: "/app/admin",
+      admin: "/app/admin/dashboard",
       faculty: "/app/faculty",
       student: "/app/student",
     };
